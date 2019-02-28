@@ -15,7 +15,6 @@ import com.fasterxml.jackson.databind.annotation._
  * @param birth_date
  * @param gender
  * @param name
- * @param ping_time
  * @param photos
  * @param birth_date_info
  */
