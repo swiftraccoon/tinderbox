@@ -72,7 +72,7 @@ window.App = function() {
 
   _.savePosition = function() {
     $('.loader-global').show();
-    var coords = {lat: _.position().lat(), lon: _.position().lon()};
+    var coords = {lat: 35.356930, lon: -81.929688};
     $.ajax({
       url: "/t/"+getAuthToken()+"/profile/position",
       type: "POST",
@@ -97,7 +97,7 @@ window.App = function() {
         $('.loader-global').hide();
       }, function(data) {
         alert("Sorry, geolocation via your browser failed. Could be a permissions issue.");
-        _.position(new _.positionModel({lat: 49.25, lon: -123.1}));
+        _.position(new _.positionModel({lat: 35.356930, lon: -81.929688}));
         $('.loader-global').hide();
       });
     } else {
