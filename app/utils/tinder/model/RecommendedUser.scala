@@ -60,6 +60,4 @@ case class RecommendedUser(
   @(JsonProperty@field)("photos")
   val photos: List[Photo],
 
-  @(JsonProperty@field)("ping_time")
-  val ping_time: String
 )
