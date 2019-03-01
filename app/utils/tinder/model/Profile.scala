@@ -19,7 +19,6 @@ import com.fasterxml.jackson.databind.annotation._
  * @param gender
  * @param name
  * @param photos
- * @param ping_time
  */
 @JsonIgnoreProperties(ignoreUnknown=true)
 case class Profile(
@@ -58,9 +57,6 @@ case class Profile(
 
   @(JsonProperty@field)("photos")
   photos: List[Photo],
-
-  @(JsonProperty@field)("ping_time")
-  ping_time: String
 )
 
 
@@ -72,7 +68,6 @@ case class Profile(
  * @param gender
  * @param name
  * @param photos
- * @param ping_time
  */
 @JsonIgnoreProperties(ignoreUnknown=true)
 case class ProfileBrief(
@@ -93,9 +88,6 @@ case class ProfileBrief(
 
   @(JsonProperty@field)("photos")
   photos: List[Photo],
-
-  @(JsonProperty@field)("ping_time")
-  ping_time: String
 )
 
 
